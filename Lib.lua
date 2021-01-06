@@ -46,6 +46,9 @@ function lib:Create(gui_name)
 	ExitB.TextScaled = true
 	ExitB.TextSize = 14.000
 	ExitB.TextWrapped = true
+	ExitB.MouseButton1Click:Connect(function()
+		ScreenGui:Destroy()
+	end)
 
 	TextLabel.Parent = topframe
 	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
