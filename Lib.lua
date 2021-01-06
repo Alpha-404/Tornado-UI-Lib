@@ -16,6 +16,8 @@ function lib:Create(gui_name)
 		syn.protect_gui(ScreenGui)
 	end
 	
+	ScreenGui.Parent = game:GetService("CoreGui")
+	
 	main.Name = "main"
 	main.Parent = ScreenGui
 	main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
